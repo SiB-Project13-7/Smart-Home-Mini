@@ -1,6 +1,6 @@
 #include <IRremote.h>
 
-#define IR_RECEIVE_PIN 15  // Pin data sensor IR di ESP32
+#define IR_RECEIVE_PIN 15  // Pin data sensor IR di ESP32 (gunakan pin sesuai keinginan)
 
 void setup() {
   Serial.begin(115200);  
@@ -9,7 +9,7 @@ void setup() {
 }
 
 void loop() {
-  if (IrReceiver.decode()) {  // Cek ada sinyal masuk nggak
+  if (IrReceiver.decode()) {  // Cek ada sinyal masuk atau nggak
     unsigned long kodeIR = IrReceiver.decodedIRData.decodedRawData;  // Ambil kode IR-nya
 
     if (kodeIR != 0 && kodeIR != 0xFFFFFFFF) {  // Cek valid atau enggak
