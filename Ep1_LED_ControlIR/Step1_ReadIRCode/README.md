@@ -17,11 +17,7 @@
 
 ## 🛠️ Rangkaian  
 **Sambungkan komponen seperti ini:**  
-**Pasang ESP32 di breadboard.**  
-**Hubungkan LED:**  
-
-   - Kaki panjang (anoda) ke **GPIO 23** (atau pin lain).  
-   - Kaki pendek (katoda) ke **GND** lewat **resistor** (220Ω atau 330Ω **sebagai pengaman**).  
+**Pasang ESP32 di breadboard.**    
 **Pasang sensor IR:**
 
 **(gambar sensor IR)**
